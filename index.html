@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(){
+            console.log("hello");
+        }
+        fun()
+        //greetings
+        function greet(a){
+            console.log("hello ",a,"welcome");
+        }
+        greet("dear")
+        greet("Vishal")
+        greet("Arun")
+        greet("Basha")
+
+        //sum of a two numbers
+        function sumo(a,b){
+            console.log(a+b);
+        }
+        sumo(2,3)
+        sumo(4,5)
+        sumo(10,4)
+        //squares
+        function sqr(a){
+            console.log(a*a);
+        }
+        sqr(4)
+        sqr(5)
+
+        //average
+        function average(arr){
+            let count=0;
+            let sum=0;
+            for(i=0;i<arr.length;i++){
+                sum+=arr[i];
+                count++;
+                avg=sum/count;
+            }
+            return avg;
+        }
+        let arr=[10,20,30,40,50];
+        console.log(average(arr));
+
+        //vowels
+        function vowel(char){
+            let estr="";
+            for(i of char)
+                if(i=='a' || i=='e' || i=='i' || i=='o' || i=='u' || i=='A' || i=='E' ||i=='I' || i=='O' || i=='U'){
+                estr+=i; 
+            }
+            return estr;
+        }
+        console.log(vowel("BAsha"));
+        console.log(vowel("You"));
+        console.log(vowel("ice I"));
+
+        //weather
+        function weather(temp,scale){
+            if(scale === "C"){
+               return(temp - 32) * 5/9;    
+            }
+            else if(scale === "F"){
+                return(temp * 9/5) + 32;
+            }
+            else{
+                return "not define";           
+            }
+        }
+        console.log(weather(100,"C"))
+        console.log(weather(40,"F"))
+       
+
+    </script>
+</body>
+</html>
